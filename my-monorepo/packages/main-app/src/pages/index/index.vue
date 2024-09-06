@@ -4,19 +4,34 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
+    <button @click="loadSubApp1">加载子应用 1</button>
+    <button @click="loadSubApp2">加载子应用 2</button>
+    <view v-if="SubAppComponent">
+      <component :is="SubAppComponent" />
+    </view>
   </view>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      title: 'Hello',
-    }
-  },
-  onLoad() {},
-  methods: {},
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const SubAppComponent = ref(null);
+
+function loadSubApp1() {
+
+
+  import('../../../../sub-app-1/src/pages/index/index.vue').then((module) => {
+    SubAppComponent.value = module.default;
+  });
 }
+
+function loadSubApp2() {
+
+  import('../../../../sub-app-2/src/pages/index/index.vue').then((module) => {
+    SubAppComponent.value = module.default;
+  });
+}
+
 </script>
 
 <style>

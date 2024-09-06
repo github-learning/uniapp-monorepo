@@ -1,2 +1,2 @@
 packages:
-  - packages/* # 包含所有子项目
+  - "packages/*" # 包含所有子项目

@@ -1,9 +1,7 @@
 {
   "name": "uni-preset-vue",
   "version": "0.0.0",
-  "workspaces": [
-    "packages/*"
-  ],
+  
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
@@ -71,5 +69,7 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-4020420240722002",
     "@vue/runtime-core": "^3.4.21",
     "vite": "5.2.8"
+
+    
   }
 }

@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-const title = ref('Hello')
+const title = ref('sub-app-1')
 </script>
 
 <style>

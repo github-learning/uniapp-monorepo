@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es2018",
+      "module": "esnext",
+      "baseUrl": ".",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "resolveJsonModule": true,
+      "noUnusedLocals": true,
+      "removeComments": false,
+      "rootDir": ".",
+      "skipLibCheck": true,
+      "paths": {
+        "@weWork/components/*": ["components/*"],
+        "@weWork/utils/*": ["utils/*"]
+      },
+      "types": ["@dcloudio/types"]
+    }
+  }
